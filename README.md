@@ -16,11 +16,10 @@ If you wanna test this out :
 
 - If you have `Reids`, you can config the `CHANNEL_LAYERS` with it, just uncomment that setting and comment others.
 
-- Run the regular `Django` commands like : {
-    <<python3 manage.py makemigrations>>
-    <<python3 manage.py migrate>>
-    <<python3 manage.py createsuperuser>>
-} to build your database.
+- Run the regular `Django` commands like : 
+<<python3 maage.py makemigration>>
+<<python3 manage.py migrate>>
+<<python3 manage.py createsuperuser>>
 
 - If You have `Postgresql`, you can connect the app with it (I'v set the congurations in the end of `settings.py`).
 
