@@ -23,7 +23,7 @@ If you wanna test this out :
 
 - If You have `Postgresql`, you can connect the app with it (I'v set the congurations in the end of `settings.py`).
 
-- You can run <<python3 manage.py test>> to test the application integrity.
+- You can run **python3 manage.py test** to test the application integrity.
 
 - Now if the `test` command have no issues you can run `python3 manage.py runserver`.
 
