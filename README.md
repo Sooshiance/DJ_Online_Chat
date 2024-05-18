@@ -22,9 +22,7 @@ If you wanna test this out :
 
 > [!IMPORTANT]
 > python3 maage.py makemigration
-> [!IMPORTANT]
 > python3 manage.py migrate
-> [!IMPORTANT]
 >python3 manage.py createsuperuser
 
 
