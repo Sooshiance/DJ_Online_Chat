@@ -19,9 +19,14 @@ If you wanna test this out :
 - Run the command `pip install -r requirements.txt` to install dependencies.
 
 - Run the regular `Django` commands like : 
-**python3 maage.py makemigration**
-**python3 manage.py migrate**
-**python3 manage.py createsuperuser**
+
+> [!IMPORTANT]
+> python3 maage.py makemigration
+> [!IMPORTANT]
+> python3 manage.py migrate
+> [!IMPORTANT]
+>python3 manage.py createsuperuser
+
 
 - If You have `Postgresql`, you can connect the app with it (I'v set the congurations in the end of `settings.py`).
 
