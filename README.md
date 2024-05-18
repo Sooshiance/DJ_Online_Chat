@@ -16,6 +16,8 @@ If you wanna test this out :
 
 - If you have `Reids`, you can config the `CHANNEL_LAYERS` with it, just uncomment that setting and comment others.
 
+- Run the command `pip install -r requirements.txt` to install dependencies.
+
 - Run the regular `Django` commands like : 
 **python3 maage.py makemigration**
 **python3 manage.py migrate**
