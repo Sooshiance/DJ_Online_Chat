@@ -2,6 +2,10 @@
 
 This is an Online chat application with Django that can integrate with Redis.
 
+You can increase its security with ``2-factor authentication``.
+
+I'v added `csrf_token` into the `chat room` itself so you can be sure about sent message.
+
 ## Primary Configurations
 
 If you wanna test this out :
@@ -18,13 +22,14 @@ If you wanna test this out :
 
 - Run the command `pip install -r requirements.txt` to install dependencies.
 
-- Run the regular `Django` commands like : 
+- Run the regular `Django` commands like : <br />
 
 > [!IMPORTANT]
 > python3 maage.py makemigration
 > python3 manage.py migrate
->python3 manage.py createsuperuser
+> python3 manage.py createsuperuser
 
+<br />
 
 - If You have `Postgresql`, you can connect the app with it (I'v set the congurations in the end of `settings.py`).
 
@@ -55,3 +60,6 @@ If you wanna add new features like timestamp you can add it to.
 ##### Docker Compose
 
 I will add **docker compose** for Redis, in few days later.
+
+- **One Mention for running Docker Compose** 
+- I assume that you have done with ``Primary Configurations`` part.
