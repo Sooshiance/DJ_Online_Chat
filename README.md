@@ -8,7 +8,7 @@ If you wanna test this out :
 
 - first fill up some settings like `SECRET_KEY` and `DEBUG` (I removed them for security reasons).
 
-- create `migrations` folders in **user** and **chat** app and also create **__init__.py** in both migrations folders.
+- create `migrations` folders in **user** and **chat** app and also create `__init__.py` in both migrations folders.
 
 - If you have `Redis` server on your machine, You can activate it and uncomment the `CHANNEL_LAYERS` setting in `settings.py`.
 
@@ -17,7 +17,7 @@ If you wanna test this out :
 - If you have `Reids`, you can config the `CHANNEL_LAYERS` with it, just uncomment that setting and comment others.
 
 - Run the regular `Django` commands like : 
-**python3 maage.py makemigration***
+**python3 maage.py makemigration**
 **python3 manage.py migrate**
 **python3 manage.py createsuperuser**
 
