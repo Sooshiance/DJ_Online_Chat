@@ -24,10 +24,18 @@ If you wanna test this out :
 
 - Run the regular `Django` commands like : <br />
 
-> [!IMPORTANT]
-> python3 maage.py makemigration
-> python3 manage.py migrate
-> python3 manage.py createsuperuser
+<br />
+<h1>
+python3 maage.py makemigration
+</h1>
+<br />
+<h1>
+python3 manage.py migrate
+</h1>
+<br />
+<h1>
+python3 manage.py createsuperuser
+</h1>
 
 <br />
 
