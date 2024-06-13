@@ -92,6 +92,9 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    
+    'chat.middleware.UserActivityMiddleware',
+    
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -198,16 +201,16 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 # TODO : Channel Layers
 CHANNEL_LAYERS = {
-    # "default": {
-    #     "BACKEND": "channels.layers.InMemoryChannelLayer"
-    # }
-
     "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [("127.0.0.1", 6379)],
-        },
-    },
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+
+    # "default": {
+    #     "BACKEND": "channels_redis.core.RedisChannelLayer",
+    #     "CONFIG": {
+    #         "hosts": [("127.0.0.1", 6379)],
+    #     },
+    # },
 }
 
 

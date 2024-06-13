@@ -1,5 +1,20 @@
 from django.db import models
 from django.utils.text import slugify
+# from django.contrib.auth.models import User
+from django.conf import settings
+from django.utils import timezone
+
+
+User = settings.AUTH_USER_MODEL
+
+
+class UserActivity(models.Model):
+    user          = models.OneToOneField(User, on_delete=models.CASCADE)
+    last_activity = models.DateTimeField(default=timezone.now)
+
+    def update_activity(self):
+        self.last_activity = timezone.now()
+        self.save()
 
 
 class Room(models.Model):

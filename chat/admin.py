@@ -1,6 +1,10 @@
 from django.contrib import admin
 
-from .models import Room
+from .models import Room, UserActivity
+
+
+class UserActivityAdmin(admin.ModelAdmin):
+    list_display = ('user', 'pk', 'last_activity')
 
 
 class RoomAdmin(admin.ModelAdmin):
@@ -9,3 +13,5 @@ class RoomAdmin(admin.ModelAdmin):
     search_fields = ['title']
 
 admin.site.register(Room, RoomAdmin)
+
+admin.site.register(UserActivity, UserActivityAdmin)
