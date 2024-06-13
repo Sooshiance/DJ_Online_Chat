@@ -6,6 +6,13 @@ You can increase its security with ``2-factor authentication``.
 
 I'v added `csrf_token` into the `chat room` itself so you can be sure about sent message.
 
+<h2>
+	New Feature is here:
+</h2>
+I'v added a feature that you can check a user is logged in or not. I'v added a middleware that can 
+process a request and finds out who is logged in or not. You can add this model to which ever url that 
+you want.
+
 ## Primary Configurations
 
 If you wanna test this out :
