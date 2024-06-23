@@ -8,7 +8,7 @@ from .forms import Register
 def loginUser(request):
     if request.user.is_authenticated:
         messages.warning(request, 'شما نمیتوانید به این صفحه مراجعه کنید')
-        return redirect('HOME')
+        return redirect('chat:home')
     elif request.method == 'POST':
         phone = request.POST.get('phone')
         password = request.POST.get('password')
